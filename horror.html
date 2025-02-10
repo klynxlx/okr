@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horror</title>
+    <title>Horror Films</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #333;
+            color: white;
+        }
+        th, td {
+            border: 1px solid #606060;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #830303;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Horror Films</h1>
+
+    <table cellspacing="10" cellpadding="5">
+        <caption>Top Horror Films</caption>
+
+        <colgroup>
+            <col span="1" style="background-color: #770000;">
+            <col span="2" style="background-color: #440000;">
+        </colgroup>
+
+        <tr>
+            <th>Genre</th>
+            <th>Movie</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Psychological Horror</td>
+            <td>The Shining</td>
+            <td>A terrifying story about a family isolated in a haunted hotel. Released in 1980 and directed by Stanley Kubrick.</td>
+        </tr>
+
+        <tr>
+            <td>Get Out</td>
+            <td>A suspenseful social thriller exploring racial dynamics with horror elements. Released in 2017 and directed by Jordan Peele.</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: center; background-color: #550000;">
+                End of Table
+            </td>
+        </tr>
+    </table>
     
+    <a href="index.html">Back to Home</a>
 </body>
 </html>
