@@ -84,3 +84,21 @@ dl dd {
     margin-left: 20px;
     font-style: italic;
 }
+
+
+   /* Контекстні селектори */
+   .links ul li a {
+    font-weight: bold;
+}
+/* Сусідні селектори */
+h2 + dl {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Дочірні селектори */
+dl > dt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+}
