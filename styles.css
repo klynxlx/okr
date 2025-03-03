@@ -11,25 +11,71 @@ h1, h2, h3 {
     text-align: center;
 }
 
+h1::before {
+    content: "🎬 "; 
+}
 
-a:link {
+h1::after {
+    content: " 🎥"; 
+}
+
+
+.links ul li a:link {
     color: #0011ff;
 }
-a:visited{
+.links ul li a:visited{
     color: #c300ff;
 }
+.links ul li a:active {
+    color: #680505;
+}
+.links ul li a:hover {
+    color: #ffd900 ;
+}
+
+
 .container {
     display: flex;
     gap: 20px;
+    position: relative;
+    margin-top: 200px; 
 }
+
+.links, .frames {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.frames {
+    width: 60%; 
+
+}
+
 .links {
     width: 40%;
+    float: left;
+    
 }
+
 iframe {
     width: 50%;
     height: 200px;
     border: 1px solid #555;
 }
+/* Очищення float */
+.frames::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Стилізація жанрових заголовків */
+.genre-title {
+    font-weight: bold;
+    color: #ff6600;
+}
+
 
 table {
     width: 90%;
@@ -57,11 +103,32 @@ caption {
     color: red;
     text-align: center;
 }
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+#main-header {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
 p.custom-style {
     color: #6e050e !important;
     font-size: 18px;
     font-style: italic;
     text-align: justify;
+}
+
+ul li:first-child {
+    font-weight: bold;
+    color: #ffcc00; /* Перший пункт списку буде жовтим */
 }
 
 ul, ol {
@@ -84,6 +151,28 @@ dl dd {
     margin-left: 20px;
     font-style: italic;
 }
+dl dt::before {
+    content: "🔹 ";
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+dl dd::after {
+    content: " 📽️";
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+#movie-links {
+    list-style-type: square;
+}
+
+.genre-title {
+    font-weight: bold;
+    color: #ff0800;
+}
+
 
 
    /* Контекстні селектори */

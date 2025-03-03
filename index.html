@@ -7,23 +7,20 @@
     <title>Welcome to Movie World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    dl {
-        text-align: center !important; 
-        text-decoration: underline;
-    }
-</style>
+
 
 <body>
-    <h1 id="main-title">Welcome to Movie World</h1>
-    <p class="custom-style">Discover amazing movies from different genres!</p>
+    <div id="main-header">
+        <h1 id="main-title">Welcome to <span class="highlight">Movie World</span></h1>
+    </div>
+
 
     <div class="container">
         <div class="links">
-            <ul type="square">
-                <li><a href="films.html" target="_blank">All Films</a></li>
-                <li><a href="horror.html" target="_blank">Horror Films</a></li>
-                <li><a href="comedy.html" target="_blank">Comedy Films</a></li>
+            <ul id="movie-links" type="square">
+                <li><a href="films.html" target="_blank" >All Films</a></li>
+                <li><a href="horror.html" target="_blank" >Horror Films</a></li>
+                <li><a href="comedy.html" target="_blank" >Comedy Films</a></li>
             </ul>
         </div>
 
@@ -34,15 +31,18 @@
         </div>
     </div>
 
-    <h2>Genres Definitions</h2>
-    <dl>
-        <dt>Horror</dt>
-        <dd>Films designed to scare and provoke fear.</dd>
-        <dt>Comedy</dt>
-        <dd>Light-hearted stories designed to entertain and amuse.</dd>
-        <dt>Sci-Fi</dt>
-        <dd>Movies that explore futuristic technology and science.</dd>
-    </dl>
+    <div class="genres"> 
+        <h2>Genres Definitions</h2>
+        <p class="custom-style">Discover amazing movies from different genres!</p>
+        <dl>
+            <dt><span class="genre-title">Horror</span></dt>
+            <dd>Films designed to scare and provoke fear.</dd>
+            <dt><span class="genre-title">Comedy</span></dt>
+            <dd>Light-hearted stories designed to entertain and amuse.</dd>
+            <dt><span class="genre-title">Sci-Fi</span></dt>
+            <dd>Movies that explore futuristic technology and science.</dd>
+        </dl>
+    </div>
 
 </body>
 </html>
